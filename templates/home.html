@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rice Classification</title>
+</head>
+<center>
+<body style="background-color: rgb(247, 240, 209);">
+    <h1> Rice Classification </h1>
+    <form method="get" action="/titanic">
+        <!-Headings for the form -->
+        <div class="headingsContainer">
+            <h3 style="color:rgb(6, 246, 246);">`**Rice Type Prediction**`</h3>
+        </div>
+        
+        <!-Main container for all inputs -->
+        <div class="mainContainer">
+            <label for="age" style="color:rgb(249, 248, 248);">Area</label><br>
+            <input type="text" placeholder="3k-10k" name="Area" required>
+            <br><br>
+            <label for="bmi" style="color:rgb(249, 248, 248);">MajorAxisLength</label><br>
+            <input type="text" placeholder="70-200" name="MajorAxisLength" required>
+            <br><br>
+            <label for="children" style="color:rgb(249, 248, 248);">MinorAxisLength</label><br>
+            <input type="text" placeholder="40-80" name="MinorAxisLength" required>
+            <br><br>
+            <label for="children" style="color:rgb(249, 248, 248);">Eccentricity</label><br>
+            <input type="text" placeholder="0.85-0.95" name="Eccentricity" required>
+            <br><br>
+            <label for="children" style="color:rgb(249, 248, 248);">ConvexArea</label><br>
+            <input type="text" placeholder="2500-8500" name="ConvexArea" required>
+            <br><br>
+            <label for="children" style="color:rgb(249, 248, 248);">EquivDiameter</label><br>
+            <input type="text" placeholder="60-120" name="EquivDiameter" required>
+            <br><br>
+            <label for="children" style="color:rgb(249, 248, 248);">Extent</label><br>
+            <input type="text" placeholder="0.40-0.80" name="Extent" required>
+            <br><br>
+            <label for="children" style="color:rgb(249, 248, 248);">Perimeter</label><br>
+            <input type="text" placeholder="200-400" name="Perimeter" required>
+            <br><br>
+            <label for="children" style="color:rgb(249, 248, 248);">Roundness</label><br>
+            <input type="text" placeholder="60-90" name="Roundness" required>
+            <br><br>
+            <label for="children" style="color:rgb(249, 248, 248);">AspectRation</label><br>
+            <input type="text" placeholder="1.4-3.4" name="AspectRation" required>
+            <br><br>
+            <!-Submit button -->
+            <input type="submit" value="Predict!">
+            <br><br>
+            <h3 style="color:rgb(6, 246, 246);">Rice Type is: <b> {{ prediction }}</b> </h3>
+
+            <h4 style="color:rgb(6, 246, 246);"> CopyRights: Ketan Gunjal </h4>
+        </div>
+    </form>
+<style>
+body{
+background-image: url(riceimg.jpg);
+background-attachment: fixed;
+background-size: 100% 100%;
+}
+</style>
+</center>
+
+</body>
+</html>
